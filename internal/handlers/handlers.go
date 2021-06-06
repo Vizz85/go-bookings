@@ -3,12 +3,11 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/Vizz85/go-bookings/internal/config"
+	"github.com/Vizz85/go-bookings/internal/models"
+	"github.com/Vizz85/go-bookings/internal/render"
 	"log"
 	"net/http"
-
-	"github.com/Vizz85/go-bookings/pkg/config"
-	"github.com/Vizz85/go-bookings/pkg/models"
-	"github.com/Vizz85/go-bookings/pkg/render"
 )
 
 // Repo the repository used by the handlers

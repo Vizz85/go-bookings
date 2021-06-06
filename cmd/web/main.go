@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
+	"github.com/Vizz85/go-bookings/internal/config"
+	"github.com/Vizz85/go-bookings/internal/handlers"
+	"github.com/Vizz85/go-bookings/internal/render"
 	"log"
 	"net/http"
 	"time"
 
-	"github.com/Vizz85/go-bookings/pkg/config"
-	"github.com/Vizz85/go-bookings/pkg/handlers"
-	"github.com/Vizz85/go-bookings/pkg/render"
 	"github.com/alexedwards/scs/v2"
 )
 
