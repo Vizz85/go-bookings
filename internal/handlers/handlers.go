@@ -3,14 +3,16 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
+	"log"
+	"net/http"
+
 	"github.com/Vizz85/go-bookings/internal/config"
 	"github.com/Vizz85/go-bookings/internal/models"
 	"github.com/Vizz85/go-bookings/internal/render"
-	"log"
-	"net/http"
 )
 
 // Repo the repository used by the handlers
+
 var Repo *Repository
 
 // Repository is the repository type

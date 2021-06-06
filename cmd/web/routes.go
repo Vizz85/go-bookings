@@ -1,9 +1,10 @@
 package main
 
 import (
+	"net/http"
+
 	"github.com/Vizz85/go-bookings/internal/config"
 	"github.com/Vizz85/go-bookings/internal/handlers"
-	"net/http"
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
