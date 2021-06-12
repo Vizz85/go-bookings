@@ -108,7 +108,7 @@ func (m *postgresDBRepo) SearchAvailabilityForAllRooms(start, end time.Time) ([]
 
 	for rows.Next() {
 		var room models.Room
-		err := rows.Scan(&room.ID, &room.RoomName)
+		err := rows.Scan(&room.ID, &room.Name)
 		if err != nil {
 			return rooms, err
 		}
@@ -135,7 +135,7 @@ func (m *postgresDBRepo) GetRoomByID(id int) (models.Room, error) {
 	row := m.DB.QueryRowContext(ctx, query, id)
 	err := row.Scan(
 		&room.ID,
-		&room.RoomName,
+		&room.Name,
 		&room.CreatedAt,
 		&room.UpdatedAt,
 	)

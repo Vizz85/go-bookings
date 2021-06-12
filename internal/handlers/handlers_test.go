@@ -81,8 +81,8 @@ func TestRepository_Reservation(t *testing.T) {
 	reservation := models.Reservation{
 		RoomID: 1,
 		Room: models.Room{
-			ID:       1,
-			RoomName: "General's Quarters",
+			ID:   1,
+			Name: "General's Quarters",
 		},
 	}
 
@@ -128,8 +128,8 @@ func TestRepository_PostReservation(t *testing.T) {
 	reservation := models.Reservation{
 		RoomID: 1,
 		Room: models.Room{
-			ID:       1,
-			RoomName: "General's Quarters",
+			ID:   1,
+			Name: "General's Quarters",
 		},
 	}
 
@@ -603,8 +603,8 @@ func TestRepository_ReservationSummary(t *testing.T) {
 	reservation := models.Reservation{
 		RoomID: 1,
 		Room: models.Room{
-			ID:       1,
-			RoomName: "General's Quarters",
+			ID:   1,
+			Name: "General's Quarters",
 		},
 	}
 
@@ -648,8 +648,8 @@ func TestRepository_ChooseRoom(t *testing.T) {
 	reservation := models.Reservation{
 		RoomID: 1,
 		Room: models.Room{
-			ID:       1,
-			RoomName: "General's Quarters",
+			ID:   1,
+			Name: "General's Quarters",
 		},
 	}
 
@@ -715,8 +715,8 @@ func TestRepository_BookRoom(t *testing.T) {
 	reservation := models.Reservation{
 		RoomID: 1,
 		Room: models.Room{
-			ID:       1,
-			RoomName: "General's Quarters",
+			ID:   1,
+			Name: "General's Quarters",
 		},
 	}
 
