@@ -146,6 +146,6 @@ func (m *testDBRepo) DeleteReservation(id int) error {
 }
 
 // UpdateProcessedReservation updates processed for a reservation by id
-func (m *testDBRepo) UpdateProcessedReservation(id, processed int) error {
+func (m *testDBRepo) UpdateProcessedForReservation(id, processed int) error {
 	return nil
 }
