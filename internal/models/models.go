@@ -52,7 +52,7 @@ type Reservation struct {
 type RoomRestriction struct {
 	ID            int
 	StartDate     time.Time
-	EndTime       time.Time
+	EndDate       time.Time
 	RoomID        int
 	ReservationID int
 	RestrictionID int
