@@ -26,10 +26,20 @@ import (
 var app config.AppConfig
 var session *scs.SessionManager
 var pathToTemplates = "./../../templates"
-var functions = template.FuncMap{}
+
+var functions = template.FuncMap{
+	"humanDate":  render.HumanDate,
+	"formatDate": render.FormatDate,
+	"iterate":    render.Iterate,
+	"add":        render.Add,
+}
 
 func TestMain(m *testing.M) {
 	gob.Register(models.Reservation{})
+	gob.Register(models.User{})
+	gob.Register(models.Room{})
+	gob.Register(models.Restriction{})
+	gob.Register(map[string]int{})
 
 	// change this to true when in production
 	app.InProduction = false
@@ -57,7 +67,7 @@ func TestMain(m *testing.M) {
 
 	tc, err := CreateTestTemplateCache()
 	if err != nil {
-		log.Fatal("cannot create template cache")
+		log.Fatal("cannot create template cache", err)
 	}
 
 	app.TemplateCache = tc
